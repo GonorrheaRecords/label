@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonorrhea Records</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-green': '#ADFF2F',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.5s ease-out;
+        }
+        .animate-slideIn {
+            animation: slideIn 0.5s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+    <header class="border-b border-neon-green">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center text-neon-green hover:text-green-400 transition-colors duration-300">
+                <img src="img/logo.png" alt="Gonorrhea Records Logo" class="h-32 w-auto mr-2">
+            </a>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-6 text-neon-green">Available Albums (CD Format)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-900 border border-neon-green rounded-lg overflow-hidden animate-slideIn">
+                <img src="img/SxKx - dd2024.jpg" alt="Dehumanization Decay" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-neon-green">Septic Karnage</h3>
+                    <p class="text-sm text-gray-300">Dehumanization Decay (4th Anniversary Remastered Edition)</p>
+                    <a href="https://kunaki.com/Sales.asp?PID=PX00JTR4KE&PP=1" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block w-full text-center bg-neon-green text-black py-2 rounded hover:bg-green-400 transition-colors duration-300">Buy Now</a>
+                </div>
+            </div>
+            <div class="bg-gray-900 border border-neon-green rounded-lg overflow-hidden animate-slideIn" style="animation-delay: 0.1s;">
+                <img src="img/Split - mt 2024.jpg" alt="Moe Tomogui" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-neon-green">Dismembered x Waifu Smashed x Septic Karnage</h3>
+                    <p class="text-sm text-gray-300">Moe Tomogui</p>
+                    <a href="https://kunaki.com/sales.asp?PID=PX00Z6Q9BT&pp=1" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block w-full text-center bg-neon-green text-black py-2 rounded hover:bg-green-400 transition-colors duration-300">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-6 border-t border-neon-green">
+	<div class="container mx-auto px-4 text-center">
+	    <p class="text-xs text-neon-green">DISCLAIMER: At this moment we only sell and ship in the United States. We don't do returns. Distribution by Kunaki.</p>
+        </div>
+	<div class="container mx-auto px-4 text-center">
+            <p class="text-xs text-neon-green">© 2024 Gonorrhea Records. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
