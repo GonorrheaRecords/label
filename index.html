@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonorrhea Records - Underground Metal Label</title>
+    <meta name="description" content="Official store for Gonorrhea Records - Your source for underground brutality">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Metal+Mania&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #22c55e;
+            --primary-dark: #16a34a;
+            --text-color: #ffffff;
+            --bg-color: #000000;
+            --card-bg: rgba(0, 0, 0, 0.6);
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background: linear-gradient(to bottom, #000000, #111111, #000000);
+            color: var(--text-color);
+        }
+
+        .font-metal {
+            font-family: 'Metal Mania', cursive;
+        }
+
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.5);
+        }
+
+        .product-image {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .slime-drip {
+            position: relative;
+        }
+
+        .slime-drip::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary-color);
+            animation: drip 3s ease-in-out infinite;
+        }
+
+        @keyframes drip {
+            0% { transform: scaleX(0); }
+            50% { transform: scaleX(1); }
+            100% { transform: scaleX(0); }
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .spotify-embed {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-black py-5 mb-5">
+        <div class="container text-center">
+            <img src="/placeholder.svg?height=200&width=500" alt="Gonorrhea Records Logo" class="img-fluid mb-4" style="max-width: 300px;">
+            <h1 class="font-metal text-primary display-4">Gonorrhea Records</h1>
+            <p class="text-white-50 h5">Your source for underground brutality</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <!-- Bulk Purchase Section -->
+        <section class="card mb-5">
+            <div class="card-body">
+                <h2 class="font-metal text-primary display-5 mb-4 slime-drip">Bulk CD Purchase</h2>
+                <p class="text-white h5 mb-4">Create your own custom CD package and save!</p>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-box fa-3x text-primary mb-3 floating"></i>
+                        <h3 class="font-metal text-primary h4">Customize Your Package</h3>
+                        <p class="text-white-50">Select multiple copies of any album in our catalog.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-truck fa-3x text-primary mb-3 floating"></i>
+                        <h3 class="font-metal text-primary h4">Single Shipping</h3>
+                        <p class="text-white-50">Have it all shipped to a single address.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-dollar-sign fa-3x text-primary mb-3 floating"></i>
+                        <h3 class="font-metal text-primary h4">Save on Shipping</h3>
+                        <p class="text-white-50">Pay only one shipping fee for all the CDs you want to grab.</p>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="https://kunaki.com/msales.asp?PublisherId=207628&pp=1" 
+                       class="btn btn-primary btn-lg"
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Create Custom Package
+                        <i class="fas fa-skull ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Distribution & Playlist Section -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="font-metal text-primary h3 mb-3 slime-drip">Distribution & Wholesale</h2>
+                        <div class="text-center">
+                            <i class="fab fa-instagram fa-4x text-primary mb-3 floating"></i>
+                            <h3 class="font-metal text-primary h4 mb-3">Gonorrhea Records on Instagram</h3>
+                            <p class="text-white-50 mb-4">
+                                Want to distribute your music with us or purchase wholesale for resale? 
+                                Reach out to us on Instagram for inquiries and collaborations.
+                            </p>
+                            <a href="https://www.instagram.com/gonorrhea_records/" 
+                               class="btn btn-primary"
+                               target="_blank" 
+                               rel="noopener noreferrer">
+                                Follow Us on Instagram
+                                <i class="fab fa-instagram ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="font-metal text-primary h3 mb-3 slime-drip">Featured Playlist</h2>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/playlist/4rXXg3csRKSz9TEW1pZa2L?utm_source=generator&theme=0"
+                                    width="100%" 
+                                    height="380" 
+                                    frameBorder="0" 
+                                    allowfullscreen="" 
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catalog Section -->
+        <section>
+            <h2 class="font-metal text-primary display-5 mb-4 slime-drip">Our Catalog</h2>
+            <p class="text-white-50 h5 mb-4">Browse our selection of individual CDs available for purchase. Each album can be bought separately.</p>
+
+            <div class="mb-4">
+                <input type="text" id="search" placeholder="Search by artist or album..." class="form-control bg-dark text-white border-primary">
+            </div>
+
+            <div id="product-grid" class="row g-4">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-4 mt-5">
+        <div class="container text-center">
+            <p class="text-white-50 mb-0">&copy; 2025 Gonorrhea Records. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Product data
+        const products = [
+            {
+                id: "PX00Z6Q9BT",
+                title: "Dismembered x Waifu Smashed x Septic Karnage - Moe Tomogui Split",
+                imageUrl: "http://kunaki.com/boxshots/PX00Z6Q9BT.jpg",
+                price: 6.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00Z6Q9BT&PP=1"
+            },
+            {
+                id: "PX00QW6JH1",
+                title: "Septic Karnage - Dehumanization Decay [2022 Re-Released]",
+                imageUrl: "http://kunaki.com/boxshots/PX00QW6JH1.jpg",
+                price: 5.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00QW6JH1&PP=1"
+            },
+            {
+                id: "PX00ZWV1FT",
+                title: "Waifu Smashed - Visceral Hentaitomy [Full-Length] CDr",
+                imageUrl: "http://kunaki.com/boxshots/PX00ZWV1FT.jpg",
+                price: 6.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00ZWV1FT&PP=1"
+            },
+            {
+                id: "PX00ZME0KC",
+                title: "Septic Karnage - W E E B G R I N D 2.0 (Remake) [Full-Length] CDr",
+                imageUrl: "http://kunaki.com/boxshots/PX00ZME0KC.jpg",
+                price: 6.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00ZME0KC&PP=1"
+            },
+            {
+                id: "PX00ZUISGR",
+                title: "Slut Muncher - Vile Lolicon Achromatopsia [Full Length] CDr (GR-014)",
+                imageUrl: "http://kunaki.com/boxshots/PX00ZUISGR.jpg",
+                price: 6.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00ZUISGR&PP=1"
+            },
+            {
+                id: "PX0093BFJ5",
+                title: "Septic Karnage - Ideologies of a Peko​-​Psychopath [EP 2021 Re-Released] (GR-007)",
+                imageUrl: "http://kunaki.com/boxshots/PX0093BFJ5.jpg",
+                price: 3.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX0093BFJ5&PP=1"
+            },
+            {
+                id: "PX00ZKJPKR",
+                title: "Septic Karnage - ★ Into Depravity ★ [LP 2025] (GR-SK03)",
+                imageUrl: "http://kunaki.com/boxshots/PX00ZKJPKR.jpg",
+                price: 6.50,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00ZKJPKR&PP=1"
+            },
+            {
+                id: "PX00FK1IV3",
+                title: "Waifu Smashed - MONSTROUS TURBID PERVERSITY [EP 2025] (GR-WS03)",
+                imageUrl: "http://kunaki.com/boxshots/PX00FK1IV3.jpg",
+                price: 3.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00FK1IV3&PP=1"
+            },
+            {
+                id: "PX00ZDEUTV",
+                title: "xKAWAIIx - Raped By Goblins (Re-Released 2024) CDr",
+                imageUrl: "http://kunaki.com/boxshots/PX00ZDEUTV.jpg",
+                price: 4.50,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00ZDEUTV&PP=1"
+            },
+            {
+                id: "PX00Z9CBXZ",
+                title: "Waifu Smashed - Retaining a Visceral Sick Mentality (Re-Released) CDr",
+                imageUrl: "http://kunaki.com/boxshots/PX00Z9CBXZ.jpg",
+                price: 3.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00Z9CBXZ&PP=1"
+            },
+            {
+                id: "PX00ZW87N3",
+                title: "xKAWAIIx - In Tights We Trust (Re-Released CDr)",
+                imageUrl: "http://kunaki.com/boxshots/PX00ZW87N3.jpg",
+                price: 6.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00ZW87N3&PP=1"
+            },
+            {
+                id: "PX00ZYBE68",
+                title: "Septic Karnage - Dehumanization Decay (Classic Jacket Case) [Re-Released]",
+                imageUrl: "http://kunaki.com/boxshots/PX00ZYBE68.jpg",
+                price: 5.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00ZYBE68&PP=1"
+            },
+            {
+                id: "PX00ZN1QHQ",
+                title: "Septic Karnage - W E E B G R I N D 2.0 (Remake) [Jacket Case Edition]",
+                imageUrl: "http://kunaki.com/boxshots/PX00ZN1QHQ.jpg",
+                price: 5.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00ZN1QHQ&PP=1"
+            },
+            {
+                id: "PX00Z5TAOG",
+                title: "Septic Karnage/Loli Police Department/Waifutomy - Otaku Personality Disorder Split",
+                imageUrl: "http://kunaki.com/boxshots/PX00Z5TAOG.jpg",
+                price: 5.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00Z5TAOG&PP=1"
+            },
+            {
+                id: "PX00Z344YP",
+                title: "Exterminate The Tsunderes (Compilation) CDr",
+                imageUrl: "http://kunaki.com/boxshots/PX00Z344YP.jpg",
+                price: 6.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00Z344YP&PP=1"
+            },
+            {
+                id: "PX00018CON",
+                title: "Waifutomy - PROMO 2K21 (CDr Special Edition)",
+                imageUrl: "http://kunaki.com/boxshots/PX00018CON.jpg",
+                price: 3.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00018CON&PP=1"
+            },
+            {
+                id: "PX00ZTN4TW",
+                title: "Sweat Collector - Dextromethorphan (CDr Unlimited Edition)",
+                imageUrl: "http://kunaki.com/boxshots/PX00ZTN4TW.jpg",
+                price: 6.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00ZTN4TW&PP=1"
+            },
+            {
+                id: "PX00IQW57Z",
+                title: "Yuka Tyan - Exclusion Zone (CDr Unlimited Edition)",
+                imageUrl: "http://kunaki.com/boxshots/PX00IQW57Z.jpg",
+                price: 6.00,
+                paypalLink: "http://kunaki.com/Sales.asp?PID=PX00IQW57Z&PP=1"
+            }
+        ];
+
+        // Function to render products
+        function renderProducts(productsToRender) {
+            const productGrid = document.getElementById('product-grid');
+            productGrid.innerHTML = '';
+            productsToRender.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'col-md-4 col-lg-3 mb-4';
+                productCard.innerHTML = `
+                    <div class="card h-100">
+                        <img src="${product.imageUrl}" alt="${product.title}" class="card-img-top product-image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title font-metal text-primary">${product.title}</h5>
+                            <p class="card-text mt-auto">$${product.price.toFixed(2)}</p>
+                            <a href="${product.paypalLink}" class="btn btn-primary mt-2" target="_blank" rel="noopener noreferrer">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                `;
+                productGrid.appendChild(productCard);
+            });
+        }
+
+        // Initial render
+        renderProducts(products);
+
+        // Search functionality
+        const searchInput = document.getElementById('search');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredProducts = products.filter(product => 
+                product.title.toLowerCase().includes(searchTerm)
+            );
+            renderProducts(filteredProducts);
+        });
+    </script>
+</body>
+</html>
